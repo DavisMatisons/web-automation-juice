@@ -18,11 +18,12 @@ public class TopMenuSection extends BasePage {
   public static By SEARCH_ICON = css("mat-search-bar[id='searchQuery']");
   public static By SEARCH_FIELD = css("input[id='mat-input-0']");
   public static By SHOPPING_CART_BUTTON;
-  public static By CHOOSE_LANGUAGE_BUTTON;
-  public static By LANGUAGE_LIST;
-  public static By ORDERS_AND_PAYMENT_OPTION;
-  public static By PRIVACY_AND_SECURITY_OPTION;
-  public static By LOGOUT_BUTTON;
+  public static By CHOOSE_LANGUAGE_BUTTON =ariaLabel("Language selection menu");
+  public static By LANGUAGE_LIST = css("mat-radio-button");
+  //For some reason, ariaLabel() didn't work on these next three.
+  public static By ORDERS_AND_PAYMENT_OPTION = css("button[aria-label='Show Orders and Payment Menu']");
+  public static By PRIVACY_AND_SECURITY_OPTION = css("button[aria-label='Show Privacy and Security Menu']");
+  public static By LOGOUT_BUTTON = css("button[aria-label='Logout']");
   public static By CHANGE_PASSWORD_BUTTON;
   public static By DIGITAL_WALLET_OPTION;
 

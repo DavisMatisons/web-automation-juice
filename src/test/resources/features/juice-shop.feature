@@ -55,7 +55,7 @@ Feature: Juice Shop Actions
     And  I click "Registration button"
     Then I should be on "Login" page
     And  "Registration completed successfully." should be "visible"
-  @run
+
   Scenario Outline: Change language
     When I "log in" with the following data:
       | Email | Password |
@@ -143,7 +143,7 @@ Feature: Juice Shop Actions
     Then I see "address" with the following data:
       | Name    | Address               | Country |
       | Karlson | Random Address 25-395 | Sweden  |
-
+  @run
   Scenario: Order an item
     When I "log in" with the following data:
       | Email | Password |

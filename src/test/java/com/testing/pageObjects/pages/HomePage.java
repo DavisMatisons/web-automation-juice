@@ -24,7 +24,7 @@ public class HomePage extends TopMenuSection {
   public static By PRODUCT_INFO_PRICE = css("p[class='item-price']");
   public static By PRODUCT_INFO_CLOSE = ariaLabel("Close Dialog");
   public static By REVIEWS_EXPAND = css("mat-panel-title");
-  public static By COMMENT_SECTION = css("div[class='mat-tooltip-trigger review-text']");
+  public static By COMMENT_SECTION = css("div[id='cdk-accordion-child-0']");
   public static By REVIEW_TEXT_FIELD = css("textarea[id='mat-input-3']");
   public static By SUBMIT_BUTTON = css("button[id='submitButton']");
 

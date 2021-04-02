@@ -27,7 +27,7 @@ Feature: Juice Shop Actions
       | King of the Hill |
     And  I click "Reviews expand"
     Then "Comment section" should contain "K33p5 y0ur ju1cy 5plu773r 70 y0ur53lf!"
-  #I think this one is messed up by the extra stuff on the public version, works otherwise.
+
   Scenario: Add comment
     When I "log in" with the following data:
       | Email | Password |
@@ -41,7 +41,7 @@ Feature: Juice Shop Actions
     And  I click "Submit Button"
     And  I click "Reviews Expand"
     Then "Comment section" should contain "Travel to Norway for more info"
-@run
+
   Scenario: Create new Juice Shop user
     When I click "Account button"
     And  I click "Login button"
@@ -55,7 +55,7 @@ Feature: Juice Shop Actions
     And  I click "Registration button"
     Then I should be on "Login" page
     And  "Registration completed successfully." should be "visible"
-
+  @run
   Scenario Outline: Change language
     When I "log in" with the following data:
       | Email | Password |
